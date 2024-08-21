@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>全螢幕示例</title>
+    <!-- 引入Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <!-- 引入Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <style>
+      /* 隱藏捲動條 */
+      body {
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+      }
+      /* 設置全螢幕 */
+      #fullscreen {
+        width: 100vw;
+        height: 100vh;
+        background-image: url("img/法國聖米歇爾山.jpg"); /* 設置背景圖片 */
+        background-size: cover; /* 填滿整個視窗 */
+        color: white; /* 設置文字顏色 */
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* 增加透明度以使文字更清晰可見 */
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+      /* 導航欄修飾 */
+      .navbar {
+        padding: 10px 0;
+      }
+      .navbar li {
+        display: inline;
+        margin-right: 20px;
+        color: white; /* 設置導覽列文字顏色 */
+      }
+      .navbar li a {
+        color: white; /* 設置導覽列連結文字顏色 */
+        text-decoration: none; /* 移除連結下劃線 */
+      }
+      /* 調整導覽列垂直對齊 */
+      .navbar {
+        align-items: center;
+      }
+      /* 移除導覽列項目之間的垂直分隔線 */
+      .navbar li.vertical-line {
+        border-right: none;
+      }
+      /* 調整導覽列樣式 */
+      .navbar-brand img {
+        height: 50px; /* 調整圖標高度 */
+      }
+      /* 調整導覽列標題大小 */
+      .navbar-brand h10 {
+        font-size: 20px;
+        margin-bottom: 0; /* 移除底部外邊距 */
+      }
+    </style>
+  </head>
+  <body>
+    <header class="bg-dark">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-2">
+            <!-- 左側圖標 -->
+            <a class="navbar-brand" href="#">
+              <img src="images/logo2.png" alt="圖標" />
+              <h10>SWEET</h10>
+            </a>
+          </div>
+          <div class="col-8 text-center">
+            <!-- 中間導航 -->
+            <ul class="list-inline navbar">
+              <li class="list-inline-item vertical-line">
+                <a href="#">景點介紹</a>
+              </li>
+              <li class="list-inline-item vertical-line">
+                <a href="#">行程規劃</a>
+              </li>
+              <li class="list-inline-item vertical-line">
+                <a href="#">住宿預訂</a>
+              </li>
+              <li class="list-inline-item vertical-line">
+                <a href="#">交通指南</a>
+              </li>
+              <li class="list-inline-item vertical-line">
+                <a href="#">旅遊攻略</a>
+              </li>
+              <li class="list-inline-item vertical-line">
+                <a href="#">旅遊問答</a>
+              </li>
+              <li class="list-inline-item vertical-line">
+                <a href="#">關於我們</a>
+              </li>
+              <li class="list-inline-item vertical-line">
+                <a href="#">聯絡我們</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-2 text-right">
+            <a href="#"><i class="fas fa-user"></i> 註冊</a> /
+            <a href="#"><i class="fas fa-sign-in-alt"></i>登錄</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="fullscreen">
+      <div class="carousel-caption">
+        <h1>法國聖米歇爾山</h1>
+        <p>世界遺產，隔世之島</p>
+        <a href="#" class="btn btn-primary">了解更多</a>
+      </div>
+    </div>
+  </body>
+</html>

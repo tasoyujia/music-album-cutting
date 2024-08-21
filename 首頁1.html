@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0 auto;
+        width: 1000px;
+      }
+
+      header {
+        background-color: brown;
+        text-align: center;
+      }
+
+      nav {
+        display: inline-block;
+        margin: 0 auto;
+      }
+
+      li {
+        list-style-type: none;
+        float: left;
+        margin-right: 5em;
+        text-align: center;
+      }
+
+      /* aside {
+        width: 20%;
+        height: 800px;
+        background-color: blueviolet;
+        clear: both;
+      } */
+
+      aside li {
+        width: 100px;
+        float: none;
+        margin-top: 2em; /* 調整aside內li元素的上邊距 */
+        border: 1px red solid;
+        padding: 2px;
+      }
+
+      aside {
+        width: 20%;
+        height: 800px;
+        background-color: blueviolet;
+        clear: both;
+        float: left; /* 添加 float: left; */
+      }
+
+      article {
+        width: 80%;
+        height: 100%;
+        background: yellow;
+        overflow: hidden; /* 清除浮動元素 */
+        margin-top: 2em; /* 調整.content的上邊距 */
+      }
+      article p {
+        padding: 5px;
+      }
+      header,
+      footer {
+        text-align: center;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>首頁</li>
+          <li>最新消息</li>
+          <li>合作店家</li>
+          <li>關於我們</li>
+          <li>聯絡我們</li>
+        </ul>
+      </nav>
+    </header>
+    <aside>
+      <ul>
+        <li>點餐流程</li>
+        <li>常見問題</li>
+        <li>優惠資訊</li>
+      </ul>
+    </aside>
+    <article>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+        illum pariatur reiciendis aperiam veritatis? Architecto iste sed
+        voluptates repellendus corrupti error harum hic dolorum, minus, illum
+        laudantium natus ea tempore.lore,Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Mollitia, fugit aspernatur provident quos aliquid
+        quisquam veniam repudiandae eius ipsum obcaecati numquam maiores
+        voluptas itaque, quibusdam similique distinctio quaerat cum sunt.
+      </p>
+    </article>
+    <footer>123@gmail.com</footer>
+  </body>
+</html>
